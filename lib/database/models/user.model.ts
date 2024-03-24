@@ -6,7 +6,7 @@ const userSchema = new Schema({
     lastName : {type : String},
     username : {type : String , required : true , unique : true},
     email : {type : String , required : true , unique : true},
-    photo : {type : URL , required : true},
+    photo : {type : String , required : true},
     clerkId : {type : String , required : true , unique : true},
     planId : {type : Number , default : 1},
     creditBelence : {type : Number , default : 10},
